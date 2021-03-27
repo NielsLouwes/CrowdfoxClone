@@ -11,6 +11,14 @@
 header {
     display: flex;
     height: 8vh;
+    width: 90%;
+    margin: auto;
+    /*justify-content: space-between;*/
+}
+
+header #logo {
+    display: flex;
+    height: 6vh;
     width: 85%;
     margin: auto;
     justify-content: space-between;
@@ -25,6 +33,14 @@ header {
 #logo ul  {
     display: flex;
     justify-content: space-around;
+}
+
+header ul li a {
+    transition: all 0.4s ease-in-out;
+}
+
+header ul li a:hover {
+    color:#df5c25;
 }
 
 
@@ -56,6 +72,8 @@ li a {
     list-style-type: none;
     color: black;
     margin-left: 25px;
+    font-weight: bolder;
+    font-size: 1.1rem;
 
 }
 
@@ -397,5 +415,63 @@ li a {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+footer {
+    background-color: #df5c25;
+    padding: 25px;
+}
 
+footer h2 {
+    width: 85%;
+    margin: 25px auto;
+    font-size: 2rem;
+    color: white;
+}
+
+footer p {
+    width: 85%;
+    margin: 25px auto 35px auto;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer form {
+    margin-left: 7.5%;
+    width: 400px;
+    height: 4vh;
+    color: black;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+footer form input {
+    color: black;
+}
+
+footer button {
+    margin-left: 7.5%;
+    background: white;
+    color: #df5c25;
+    font-size: 1.2rem;
+    padding-right: 60px;
+    padding-left: 60px;
+    height: 5vh;
+    width: 400px;
+    border: 1px solid #df5c25;
+    margin-bottom: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    height: 60px;
+    width: 400px;
+    color: black;
+}
+
+::placeholder {
+    color: #df5c25;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: center;
+}
 
